@@ -2,24 +2,137 @@
 // reminder of everything that a high-quality, professional README should contain, use guide for readme: https://github.com/coding-boot-camp/potential-enigma/blob/master/readme-guide.md
 // The application will be invoked by using the following command: node index.js
 // Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality. 2.2.4: Screencastify Tutorial in Module 2 of the prework. You’ll need to submit a link to the video and add it to the README of your project.
+// Do the license part in end before final check and submission
 
 
-
-
-
-// TODO: Include packages needed for this application
+const fs = require('fs');
+const inquirer = require('inquirer');
+// this will link the license badge page
+const licensePage = require('./utils/generateMarkdown.js');
+var title = [];
 
 // TODO: Create an array of questions for user input
-const questions = [];
+
+
+const questions = () => {
+
+  inquirer.prompt(
+  [{
+      // this needs to be fixed to change title of readme.md -check
+      type: "input",
+      name: "title",
+      message: "What is your project title?"
+    },    
+     { type: "input",
+      name: "description",
+      message: "Please enter a description of your application"
+      },
+      { 
+        type: "input",
+        name: "installation",
+        message: "Please enter the installation instructions"
+      },
+      { 
+        type: "input",
+        name: "usage",
+        message: "Please enter the usage information"
+      },
+      { 
+        type: "input",
+        name: "contribution",
+        message: "Please enter the contribution guidelines"
+      },
+      { 
+        type: "input",
+        name: "test",
+        message: "Please enter the test instructions" 
+      },
+      { 
+        //you can check this in 9.3, this section will be in conjuction of license portion of other page, selection is working but value is not being produced
+        type: "checkbox",
+        name: "license",
+        message: "Please choose a license for your application from a list of following options (Press <space> to select, <a> to toggle all, <i> to invert)",
+        choices: ["Apache License 2.0", "GNU General Public License v3.0", "MIT License", "BSD 2-Clause Simplified License", "BSD 3-Clause New or Revised License", "Boost Software License 1.0",
+        "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "GNU Affero General Public License v3.0", "GNU General Public License v2.0", "GNU Lesser General Public License v2.1", "Mozilla Public License 2.0", "The Unlicense"]              
+      },
+      {
+      type: "input",
+      name: "Github",
+      message: "What is your GitHub username for this application?" 
+    },
+{
+type: "input",
+name: "email",
+message: "What is your email address?"
+},
+{   
+type: "input",
+name: "questions",
+message: "Do you have any questions, you can also reach me with additional questions via email?"
+}]).then(data =>  {
+    console.log(data)
+    let title = data.title;
+    console.log(title);
+    fs.writeFile(title + ".md", 
+`# Description:
+    ${data.description}
+
+# Installation:
+    ${data.installation}
+   
+# Usage:
+    ${data.usage}
+    
+# contribution:
+    ${data.contribution}
+        
+# test:
+    ${data.test}
+     
+# License:
+      ${data.license}
+   
+# Github:  
+      ${data.Github}
+     
+# Email: 
+      ${data.email}
+
+# Questions: 
+      ${data.questions}
+
+    `, function(){
+        console.log("success")
+    })
+})
+};
+
+questions();
+
+
+
+
+/*
+//questions()
+//.then(portfolioData => {
+//const pageHTML = writeToFile(portfolioData);
+//fs.writeFile('.readme.md', pageHTML, err =>{
+  //  if (err) throw new Error(err);
+
+    //console.log('Page created! Check out index.html in this directory to see it!');
+  
+//});
+//});
+
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+
 
 // TODO: Create a function to initialize app
-function init() {}
+//function init() {}
 
 // Function call to initialize app
-init();
+//init();
 
 
 // screen-recorder needs to go on github (link for video), for sample readme use diff folder - ReadMe Generator
@@ -69,3 +182,4 @@ init();
 // to automatically include node_modules,
 // pacakge already has Package.json, just edit
 // Nom install will install all dependencies present in package.json
+*/

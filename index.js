@@ -10,6 +10,7 @@ const inquirer = require('inquirer');
 // this will link the license badge page
 const licensePage = require('./utils/generateMarkdown.js');
 var title = [];
+var badge = [];
 
 // TODO: Create an array of questions for user input
 
@@ -54,6 +55,7 @@ const questions = () => {
         message: "Please choose a license for your application from a list of following options (Press <space> to select, <a> to toggle all, <i> to invert)",
         choices: ["Apache License 2.0", "GNU General Public License v3.0", "MIT License", "BSD 2-Clause Simplified License", "BSD 3-Clause New or Revised License", "Boost Software License 1.0",
         "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "GNU Affero General Public License v3.0", "GNU General Public License v2.0", "GNU Lesser General Public License v2.1", "Mozilla Public License 2.0", "The Unlicense"]              
+    
       },
       {
       type: "input",
@@ -73,9 +75,22 @@ message: "Do you have any questions, you can also reach me with additional quest
     console.log(data)
     let title = data.title;
     console.log(title);
+    console.log(data.license);
+    
+    if (data.license = "[ 'Apache License 2.0' ]")
+    {
+    var badge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    }
+    else if (data.license = "[ 'MIT License' ]")
+    {
+    var badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+
+    }
+
+
     fs.writeFile(title + ".md", 
     `
-    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+${badge}
 
 # Description:
     ${data.description}

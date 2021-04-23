@@ -1,30 +1,31 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # Description:
-    aaa
+    fd
 
 # Installation:
-    sss
+    df
    
 # Usage:
-    dd
+    dfd
     
 # contribution:
-    d
+    fd
         
 # test:
-    f
+    df
      
 # License:
-    Your repository is licensed under the MIT License 
+    Your repository is licensed under the [ 'Apache License 2.0' ] 
    
 # Github:  
-      dd
+      df
      
 # Email: 
-      d
+      fd
 
 # Questions: 
-      f
+      fd
 
     

@@ -1,28 +1,30 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Description:
-    aa
+    aaa
 
 # Installation:
-    
+    sss
    
 # Usage:
-    s
+    dd
     
 # contribution:
     d
         
 # test:
-    ff
+    f
      
 # License:
-      BSD 2-Clause Simplified License
+    Your repository is licensed under the MIT License 
    
 # Github:  
-      aa
+      dd
      
 # Email: 
-      ee
+      d
 
 # Questions: 
-      no
+      f
 
     

@@ -74,7 +74,10 @@ message: "Do you have any questions, you can also reach me with additional quest
     let title = data.title;
     console.log(title);
     fs.writeFile(title + ".md", 
-`# Description:
+    `
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+# Description:
     ${data.description}
 
 # Installation:
@@ -90,7 +93,7 @@ message: "Do you have any questions, you can also reach me with additional quest
     ${data.test}
      
 # License:
-      ${data.license}
+    Your repository is licensed under the ${data.license} 
    
 # Github:  
       ${data.Github}

@@ -78,18 +78,18 @@ message: "Do you have any questions, you can also reach me with additional quest
     console.log(data.license);
     var badgeData = data.license;
     function makeBadge (badgeData) {
-    switch (badgeData) 
+    if (badgeData = "[ 'Apache License 2.0' ]")
     {
-    case "[ 'Apache License 2.0' ]":
-    return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"  
-  
-    case "[ 'MIT License' ]":
+    return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+    }
+    else if (badgeData = "[ 'MIT License' ]")
+    {
     return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-  }
-};
+    }
+  };
 
 //this is connection point of generateMarkdown from another page    
-
+//please add table of contents as well
 
     fs.writeFile(title + ".md", 
     `

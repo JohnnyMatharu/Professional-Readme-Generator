@@ -8,7 +8,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 // this will link the license badge page
-const licensePage = require('./utils/generateMarkdown.js');
+//const licensePage = require('./utils/generateMarkdown.js');
 var title = [];
 var badge = [];
 
@@ -76,21 +76,24 @@ message: "Do you have any questions, you can also reach me with additional quest
     let title = data.title;
     console.log(title);
     console.log(data.license);
-    
-    if (data.license = "[ 'Apache License 2.0' ]")
+    var badgeData = data.license;
+    function makeBadge (badgeData) {
+    switch (badgeData) 
     {
-    var badge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
-    }
-    else if (data.license = "[ 'MIT License' ]")
-    {
-    var badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+    case "[ 'Apache License 2.0' ]":
+    return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"  
+  
+    case "[ 'MIT License' ]":
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+  }
+};
 
-    }
+//this is connection point of generateMarkdown from another page    
 
 
     fs.writeFile(title + ".md", 
     `
-${badge}
+${makeBadge()};
 
 # Description:
     ${data.description}

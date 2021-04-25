@@ -136,14 +136,23 @@ ${makeBadge(data.license)}
 
 
 # <h3>Table of Contents</h3>
+
 <a href="#descr">Description</a>
+
 <a href="#install">Installation</a>
+
 <a href="#usage">Usage</a>
+
 <a href="#contr">Contribution</a>
+
 <a href="#test">Test</a>
+
 <a href="#license">License</a>
+
 <a href="#github">Github</a>
+
 <a href="#email">Email</a>
+
 <a href="#question">Questions</a>
 
 

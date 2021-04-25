@@ -1,31 +1,31 @@
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 
 # Description:
-    lpoiu
+    k
 
 # Installation:
-    h
+    
    
 # Usage:
-    p
+    h
     
 # contribution:
-    g
+    u
         
 # test:
-    j
+    g
      
 # License:
-    Your repository is licensed under the MIT License 
+    Your repository is licensed under the BSD 2-Clause Simplified License 
    
 # Github:  
-    https://github.com/JohnyMatharu
+    https://github.com/JohnnyMatharu
      
 # Email: 
-      j
+      l
 
 # Questions: 
-      h
+      j
 
     

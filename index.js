@@ -134,32 +134,44 @@ else if (license === "The Unlicense") {
     `
 ${makeBadge(data.license)}
 
-# Description:
+
+# <h3>Table of Contents</h3>
+<a href="#descr">Description</a>
+<a href="#install">Installation</a>
+<a href="#usage">Usage</a>
+<a href="#contr">Contribution</a>
+<a href="#test">Test</a>
+<a href="#license">License</a>
+<a href="#github">Github</a>
+<a href="#email">Email</a>
+<a href="#question">Questions</a>
+
+
+# <h3 id = "descr">Description:</h3>
     ${data.description}
 
-# Installation:
+# <h3 id = "install">"Installation:</h3>
     ${data.installation}
    
-# Usage:
+# <h3 id = "usage">Usage:</h3>
     ${data.usage}
     
-# contribution:
+# <h3 id = "contr">Contribution:</h3>
     ${data.contribution}
         
-# test:
+# <h3 id = "test">Test:</h3>
     ${data.test}
      
-# License:
+# <h3 id = "license">License:</h3>
     Your repository is licensed under the ${data.license} 
    
-# Github:  
+# <h3 id = "github">Github:</h3>  
 <a href="https://github.com/${data.Github}">Github Link</a>
 
-     
-# Email: 
+# <h3 id = "email">Email:</h3> 
       ${data.email}
 
-# Questions: 
+# <h3 id = "question">Questions:</h3> 
       ${data.questions}
 
     `, function(){

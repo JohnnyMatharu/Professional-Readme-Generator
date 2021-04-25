@@ -153,7 +153,8 @@ ${makeBadge(data.license)}
     Your repository is licensed under the ${data.license} 
    
 # Github:  
-    https://github.com/${data.Github}
+<a href="https://github.com/${data.Github}">Github Link</a>
+
      
 # Email: 
       ${data.email}
@@ -214,10 +215,6 @@ questions();
 // Along with video and github url, A sample README.md file for a project repository generated using your application.
 
 
-
-
-// WHEN I enter my GitHub username
-// THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
 // WHEN I click on the links in the Table of Contents
 // THEN I am taken to the corresponding section of the README
 */

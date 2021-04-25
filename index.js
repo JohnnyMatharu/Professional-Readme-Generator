@@ -12,6 +12,11 @@ const inquirer = require('inquirer');
 var title = [];
 var badge = [];
 
+// test
+
+
+
+// test finish
 // TODO: Create an array of questions for user input
 
 
@@ -53,7 +58,7 @@ const questions = () => {
         type: "checkbox",
         name: "license",
         message: "Please choose a license for your application from a list of following options (Press <space> to select, <a> to toggle all, <i> to invert)",
-        choices: ["Apache License 2.0", "GNU General Public License v3.0", "MIT License", "BSD 2-Clause Simplified License", "BSD 3-Clause New or Revised License", "Boost Software License 1.0",
+        choices: ["Apache License 2.0", "GNU General Public License v3.0", "MIT", "BSD 2-Clause Simplified License", "BSD 3-Clause New or Revised License", "Boost Software License 1.0",
         "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "GNU Affero General Public License v3.0", "GNU General Public License v2.0", "GNU Lesser General Public License v2.1", "Mozilla Public License 2.0", "The Unlicense"]              
     
       },
@@ -78,18 +83,30 @@ message: "Do you have any questions, you can also reach me with additional quest
     console.log(data.license);
     var badgeData = data.license;
     function makeBadge (badgeData) {
-    if (badgeData = "[ 'Apache License 2.0' ]")
-    {
-    return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
-    }
-    else if (badgeData = "[ 'MIT License' ]")
-    {
-    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-    }
+      var data = {
+      badge1: [{
+            MIT: "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+            name: 'foo'
+        }]
+      };
+      
+      // if (badgeData = "[ 'Apache License 2.0' ]")
+         // {
+         // return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+         // }
+         // else if (badgeData = "[ 'MIT License' ]")
+         // {
+         // return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+         // }
+
+      console.log(data.badge1.badgeData.value);
+
+   
   };
 
 //this is connection point of generateMarkdown from another page    
 //please add table of contents as well
+//try adding array methods if needed
 
     fs.writeFile(title + ".md", 
     `

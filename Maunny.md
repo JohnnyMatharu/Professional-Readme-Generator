@@ -30,7 +30,7 @@
 
 
 # <h3 id = "usage">Usage:</h3>
-    Users searches the name of a car manufacturer, car model, and features including mileage, year of manufacturing. Once a vehicle is retrieved, if interested user inputs the stock number of the vehicle, presses submit button, data will be stored in the local storage and a customer representative will contact the customer within 30 Minutes. With the payment calculator, user can calculates payment interval (i.e weekly, biweekly and monthly), interest rates, finance duration and down payment/exchange car. Interest rates are based on a range of credit score, and estimated payment will be displayed underneath.https://user-images.githubusercontent.com/78877585/114321098-0364e980-9ae7-11eb-9266-5c49f862154f.png. https://user-images.githubusercontent.com/78877585/114321133-28f1f300-9ae7-11eb-92ff-7b38fdcb9cfd.png. https://user-images.githubusercontent.com/78877585/114321153-445cfe00-9ae7-11eb-8bbb-01e0fde75a8c.png
+    Users searches the name of a car manufacturer, car model, and features including mileage, year of manufacturing. Once a vehicle is retrieved, if interested user inputs the stock number of the vehicle, presses submit button, data will be stored in the local storage and a customer representative will contact the customer within 30 Minutes. With the payment calculator, user can calculates payment interval (i.e weekly, biweekly and monthly), interest rates, finance duration and down payment/exchange car. Interest rates are based on a range of credit score, and estimated payment will be displayed underneath. Screenshots: https://user-images.githubusercontent.com/78877585/114321098-0364e980-9ae7-11eb-9266-5c49f862154f.png. https://user-images.githubusercontent.com/78877585/114321133-28f1f300-9ae7-11eb-92ff-7b38fdcb9cfd.png. https://user-images.githubusercontent.com/78877585/114321153-445cfe00-9ae7-11eb-8bbb-01e0fde75a8c.png
     
 
 # <h3 id = "contr">Contribution:</h3>
@@ -52,8 +52,8 @@
 # <h3 id = "email">Email:</h3> 
       jaani.matharu@gmail.com
 
-      
+
 # <h3 id = "question">Questions:</h3> 
-       If you have any questions please email me at the above email address
+      If you have any questions please email me at the above email address
 
     

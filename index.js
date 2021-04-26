@@ -57,7 +57,7 @@ const questions = () => {
         //you can check this in 9.3, this section will be in conjuction of license portion of other page, selection is working but value is not being produced
         type: "list",
         name: "license",
-        message: "Please choose a license for your application from a list of following options (Press <space> to select, <a> to toggle all, <i> to invert)",
+        message: "Please choose a license for your application from a list of following options (Press <enter> to select)",
         choices: ["Apache License 2.0", "GNU General Public License v3.0", "MIT License", "BSD 2-Clause Simplified License", "BSD 3-Clause New or Revised License", "Boost Software License 1.0",
         "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "GNU Affero General Public License v3.0", "GNU General Public License v2.0", "GNU Lesser General Public License v2.1", "Mozilla Public License 2.0", "The Unlicense"]              
     
@@ -185,7 +185,7 @@ ${makeBadge(data.license)}
 # <h3 id = "email">Email:</h3> 
       ${data.email}
 
-      
+
 # <h3 id = "question">Questions:</h3> 
       ${data.questions}
 

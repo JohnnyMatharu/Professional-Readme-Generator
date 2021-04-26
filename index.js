@@ -137,7 +137,7 @@ ${makeBadge(data.license)}
 # <h3 id = "descr">Description:</h3>
     ${data.description}
 
-    # <h3>Table of Contents</h3>
+# <h3>Table of Contents</h3>
     
     <a href="#install">Installation</a>
     
@@ -155,7 +155,7 @@ ${makeBadge(data.license)}
     
     <a href="#question">Questions</a>
         
-# <h3 id = "install">"Installation:</h3>
+# <h3 id = "install">Installation:</h3>
     ${data.installation}
 
 # <h3 id = "usage">Usage:</h3>
@@ -178,7 +178,7 @@ ${makeBadge(data.license)}
 
 # <h3 id = "question">Questions:</h3> 
       ${data.questions}
-      
+
     `, function(){
         console.log("success")
     })

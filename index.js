@@ -132,13 +132,10 @@ else if (license === "The Unlicense") {
 
     fs.writeFile(title + ".md", 
     `
-# Badge
-    ${makeBadge(data.license)}
+${makeBadge(data.license)}
 
-    
 # <h3 id = "descr">Description:</h3>
     ${data.description}
-
 
     # <h3>Table of Contents</h3>
     
@@ -158,37 +155,30 @@ else if (license === "The Unlicense") {
     
     <a href="#question">Questions</a>
         
-
 # <h3 id = "install">"Installation:</h3>
     ${data.installation}
-   
 
 # <h3 id = "usage">Usage:</h3>
     ${data.usage}
     
-
 # <h3 id = "contr">Contribution:</h3>
     ${data.contribution}
-    
-    
+        
 # <h3 id = "test">Test:</h3>
     ${data.test}
-    
     
 # <h3 id = "license">License:</h3>
     Your repository is licensed under the ${data.license} 
    
-
 # <h3 id = "github">Github:</h3>  
 <a href="https://github.com/${data.Github}">Github Link</a>
-
 
 # <h3 id = "email">Email:</h3> 
       ${data.email}
 
-
 # <h3 id = "question">Questions:</h3> 
       ${data.questions}
+      
     `, function(){
         console.log("success")
     })

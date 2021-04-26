@@ -132,57 +132,63 @@ else if (license === "The Unlicense") {
 
     fs.writeFile(title + ".md", 
     `
-${makeBadge(data.license)}
+# Badge
+    ${makeBadge(data.license)}
 
-
-# <h3>Table of Contents</h3>
-
-<a href="#descr">Description</a>
-
-<a href="#install">Installation</a>
-
-<a href="#usage">Usage</a>
-
-<a href="#contr">Contribution</a>
-
-<a href="#test">Test</a>
-
-<a href="#license">License</a>
-
-<a href="#github">Github</a>
-
-<a href="#email">Email</a>
-
-<a href="#question">Questions</a>
-
-
+    
 # <h3 id = "descr">Description:</h3>
     ${data.description}
+
+
+    # <h3>Table of Contents</h3>
+    
+    <a href="#install">Installation</a>
+    
+    <a href="#usage">Usage</a>
+    
+    <a href="#contr">Contribution</a>
+    
+    <a href="#test">Test</a>
+    
+    <a href="#license">License</a>
+    
+    <a href="#github">Github</a>
+    
+    <a href="#email">Email</a>
+    
+    <a href="#question">Questions</a>
+        
 
 # <h3 id = "install">"Installation:</h3>
     ${data.installation}
    
+
 # <h3 id = "usage">Usage:</h3>
     ${data.usage}
     
+
 # <h3 id = "contr">Contribution:</h3>
     ${data.contribution}
-        
+    
+    
 # <h3 id = "test">Test:</h3>
     ${data.test}
-     
+    
+    
 # <h3 id = "license">License:</h3>
     Your repository is licensed under the ${data.license} 
    
+
 # <h3 id = "github">Github:</h3>  
 <a href="https://github.com/${data.Github}">Github Link</a>
+
 
 # <h3 id = "email">Email:</h3> 
       ${data.email}
 
+
 # <h3 id = "question">Questions:</h3> 
       ${data.questions}
-
     `, function(){
         console.log("success")
     })
@@ -195,26 +201,6 @@ questions();
 
 
 /*
-//questions()
-//.then(portfolioData => {
-//const pageHTML = writeToFile(portfolioData);
-//fs.writeFile('.readme.md', pageHTML, err =>{
-  //  if (err) throw new Error(err);
-
-    //console.log('Page created! Check out index.html in this directory to see it!');
-  
-//});
-//});
-
-
-// TODO: Create a function to write README file
-
-
-// TODO: Create a function to initialize app
-//function init() {}
-
-// Function call to initialize app
-//init();
 
 
 // screen-recorder needs to go on github (link for video), for sample readme use diff folder - ReadMe Generator
@@ -224,7 +210,6 @@ questions();
 // Include any other screenshots you deem necessary to help someone who has never been introduced to your application understand the purpose and function of it. This is how you will communicate to potential employers or other developers in the future what you built and why, and to show how it works.
 
 
-// Deliverables: 20%
 // Check: A sample README generated using the application must be submitted.
 // Your GitHub repository containing your application code.
 // Walkthrough Video: 27%
@@ -234,8 +219,4 @@ questions();
 
 // The walkthrough video must demonstrate a generated README that matches the user input and has a functioning table of contents.
 // Along with video and github url, A sample README.md file for a project repository generated using your application.
-
-
-// WHEN I click on the links in the Table of Contents
-// THEN I am taken to the corresponding section of the README
 */

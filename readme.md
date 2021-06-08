@@ -2,29 +2,15 @@
 Professional Readme Generator
 
 # Description 
+Github Profile is a very strong tool for coding and making a ReadMe file every time could not only be time consuming, but also monotonous. This app serves that purpose of saving time and creating something more presentable. It can create a ReadMe, design can be tailor made, will be based on user entry 
 
-Your GitHub profile is an extremely important aspect of your public identity as a developer. A well-crafted one allows you to show off your work to other developers as well as potential employers. An important component of your GitHub profile—and one that many new developers often overlook—is the README.md file.
+Information from the user will automatically transferred to ReadMe in different sections. The badge will be displayed based on user choice. Table of Contents will automatically take to appropriate section. User will pass all data through queries
 
-The quality of a README often differentiates a good project from a bad project. A good one takes advantage of the opportunity to explain and showcase what your application does, justify the technologies used, and even talk about some of the challenges you faced and features you hope to implement in the future. A good README helps you stand out among the large crowd of developers putting their work on GitHub.
-
-There's no one right way to structure a good README. There is one very wrong way, however, and that is to not include a README at all or to create a very anemic one. This guide outlines a few best practices. As you progress in your career, you will develop your own ideas about what makes a good README.
-
-At a minimum, your project README needs a title and a short description explaining the what, why, and how. What was your motivation? Why did you build this project? (Note: The answer is not "Because it was a homework assignment.") What problem does it solve? What did you learn? What makes your project stand out?
-
-
-
-
-Tools used are Node 
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Tools used is Node and NPM.
 
 # Screenshots
-
+https://github.com/JohnnyMatharu/Professional-Readme-Generator/blob/main/Screen%20Shot%202021-06-08%20at%203.52.30%20PM.png?raw=true
+https://github.com/JohnnyMatharu/Professional-Readme-Generator/blob/main/Screen%20Shot%202021-06-08%20at%204.19.07%20PM.png?raw=true
 
 # Made by
 Johnny (Indermeet) Matharu

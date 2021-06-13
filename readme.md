@@ -12,8 +12,8 @@ Tools used is Node and NPM.
 https://github.com/JohnnyMatharu/Professional-Readme-Generator
 
 # Screenshots
-https://github.com/JohnnyMatharu/Professional-Readme-Generator/blob/main/Screen%20Shot%202021-06-08%20at%203.52.30%20PM.png?raw=true
 https://github.com/JohnnyMatharu/Professional-Readme-Generator/blob/main/Screen%20Shot%202021-06-08%20at%204.19.07%20PM.png?raw=true
+https://github.com/JohnnyMatharu/Professional-Readme-Generator/blob/main/screenshot.png?raw=true
 
 # Made by
 Johnny (Indermeet) Matharu
